@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.zjucvg.rtreconstruction.AutoFitImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_below="@id/image_view"
+        android:layout_toRightOf="@id/image_view"
+        android:background="#4285f4"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/Item">
+
+                <TextView
+                    style="@style/Description"
+                    android:text="@string/slam_fps"/>
+
+                <TextView
+                    android:id="@+id/slam_fps"
+                    style="@style/Value"
+                    android:text="@string/slam_fps_unknown"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/Item">
+
+                <TextView
+                    style="@style/Description"
+                    android:text="@string/slam_state"/>
+
+                <TextView
+                    android:id="@+id/slam_state"
+                    style="@style/Value"
+                    android:text="@string/slam_state_notstarted"/>
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/Item">
+
+                <TextView
+                    style="@style/Description"
+                    android:text="@string/camera_rot_axis"/>
+
+                <TextView
+                    android:id="@+id/camera_rot_axis"
+                    style="@style/Value"
+                    android:text="@string/camera_rot_axis_unknown"/>
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/Item">
+
+                <TextView
+                    style="@style/Description"
+                    android:text="@string/camera_rot_angle"/>
+
+                <TextView
+                    android:id="@+id/camera_rot_angle"
+                    style="@style/Value"
+                    android:text="@string/camera_rot_angle_unknown"/>
+            </LinearLayout>
+
+            <LinearLayout style="@style/Item">
+
+                <TextView
+                    style="@style/Description"
+                    android:text="@string/camera_pos"/>
+
+                <TextView
+                    android:id="@+id/camera_pos"
+                    style="@style/Value"
+                    android:text="@string/camera_pos_unknown"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/control"
+                style="@style/Item"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/start"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>

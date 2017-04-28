@@ -73,8 +73,8 @@ public class Utility {
     if (fisheye) {
       // ref: http://docs.opencv.org/trunk/db/d58/group__calib3d__fisheye.html
       float k1 = k[0], k2 = k[1], k3 = k[2], k4 = k[3];
-      float r = (float) Math.sqrt(x * x + y * y);
-      float t = (float) Math.atan(r), t2 = t * t, t4 = t2 * t2, t6 = t2 * t4,
+      float r = (float)Math.sqrt(x * x + y * y);
+      float t = (float)Math.atan(r), t2 = t * t, t4 = t2 * t2, t6 = t2 * t4,
             t8 = t4 * t4;
       float t_d = t * (1 + k1 * t2 + k2 * t4 + k3 * t6 + k4 * t8);
       x = (t_d / r) * x;

@@ -249,9 +249,9 @@ public class NativeVSLAM implements AutoCloseable {
   // attitude.rotationVector[4 * 8]
   // attitude.gravity [3 * 8]
   // attitude.timestamp [8]
-  public byte[] packNativeFrame(final Frame frame) {
-    int width = mConfig.size.width;
-    int height = mConfig.size.height;
+  public static byte[] packNativeFrame(final Frame frame) {
+    int width = 640;
+    int height = 480;
     int imageFieldLen = 4 + 4 + 8 + width * height;
     int IMUFieldLen = 4 + frame.imus.size() * (4 + 24 + 8 + 4 + 24 + 8);
     int attitudeFieldLen = 32 + 24 + 8;
@@ -483,7 +483,6 @@ public class NativeVSLAM implements AutoCloseable {
   }
 
   private NativeVSLAM(final VSLAMConfig config, boolean recording) {
-    mConfig = config;
     mPtrVSLAM = get_instance(config);
     assert mPtrVSLAM != 0;
     mIndex = 0;

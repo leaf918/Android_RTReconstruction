@@ -11,7 +11,7 @@ public class OpenCLUtility {
 
     public static Bitmap grayToBitmap(byte[] gray, int width, int height) {
         byte []graybmp = gray2Bitmap(gray, width, height);
-        Bitmap bitmap = BitmapFactory.decodeByteArray(gray, 0, gray.length);
+        Bitmap bitmap = BitmapFactory.decodeByteArray(graybmp, 0, graybmp.length);
         return bitmap;
     }
 

@@ -1,3 +1,51 @@
 <resources>
     <string name="app_name">RTReconstruction</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+
+    <string name="offline">Offline</string>
+    <string name="online">Online</string>
+
+    <string name="permission_request">This sample needs permission for camera and audio recording.</string>
+
+    <!-- VSLAM -->
+    <string name="slam_state">State</string>
+    <string name="slam_state_notstarted">Not Started</string>
+    <string name="slam_state_detecting">Detecting</string>
+    <string name="slam_state_detected">Detected</string>
+    <string name="slam_state_success">Success</string>
+    <string name="slam_state_fail">Fail</string>
+
+    <string name="slam_fps">FPS</string>
+    <string name="slam_fps_unknown">Unknown</string>
+
+    <string name="camera_rot_axis">Axis</string>
+    <string name="camera_rot_axis_unknown">Unknown</string>
+
+    <string name="camera_rot_angle">Angle</string>
+    <string name="camera_rot_angle_unknown">Unknown</string>
+
+    <string name="camera_pos">Position</string>
+    <string name="camera_pos_unknown">Unknown</string>
+
+    <!-- OfflineFrameSource -->
+    <string name="offline_file_path_format_key">File Path Format</string>
+    <string name="offline_file_path_format">File Path Format</string>
+    <string name="offline_file_beg_key">Begin</string>
+    <string name="offline_file_beg">Begin</string>
+    <string name="offline_file_step_key">Step</string>
+    <string name="offline_file_step">Step</string>
+    <string name="offline_file_end_key">End</string>
+    <string name="offline_file_end">End</string>
+    <string name="int_max">2147483647</string>
+
+    <!-- menu -->
+    <string name="menu_help">Help</string>
+    <string name="menu_set_intrinsics">Set Intrinsics</string>
+    <string name="menu_choose_data">Choose Data</string>
+
 </resources>
